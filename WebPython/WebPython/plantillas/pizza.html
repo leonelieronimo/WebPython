@@ -1,0 +1,43 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block Title %} Seccion Pizzas {% endblock %}
+
+{% block ChangeContent %}
+
+    <div class="divPizza">
+        <h1>Seccion para pizzas</h1>
+        <h3>Arme su pedido en el formulario</h3>
+    </div>
+    <form id="formulario">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Agregado 1">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Agregado 2">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Agregado 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Bebida">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder=" Guarnicion">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Tu DNI">
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
