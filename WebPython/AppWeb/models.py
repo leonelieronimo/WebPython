@@ -1,6 +1,11 @@
 from django.forms import CharField
 from django.db import models
 
+class Usuario(models.Model):
+    nombreCliente = models.CharField(max_length=10)
+    apellidoCliente = models.CharField(max_length=15)
+    dni = models.IntegerField()
+
 class Pancho(models.Model):
     agregado1 = models.CharField(max_length=15)
     agregado2 = models.CharField(max_length=15)

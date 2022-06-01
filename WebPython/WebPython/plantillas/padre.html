@@ -11,7 +11,21 @@
 </head>
 <body>
     {% include "navbar.html" %}
+
+    {% if miFornulario.errors %}
+
+    <p style="color:red;">Los datos son erroneos. Revise por favor </p>
+
+    {% endif %}
     
+    <form action="" method="POST"> {% csrf_token %}
+        <table>
+            {{ miFormulario.as_table }}
+        </table>
+        <input type="submit", value="Enviar">
+
+    </form>
+
     {% block ChangeContent %}   {% endblock %}
 
 
